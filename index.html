@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Island Measuring — Building Measurement. Victoria, BC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Hand-measured floor plans and as-built documentation for Greater Victoria. Residential listing plans, renovation as-builts, and commercial BOMA area measurement.">
+<!-- ════════════════════════════════════════════════════════════════════════
+     ISLAND MEASURING — single-file site, no external assets, GitHub-Pages ready.
+     Style: contractor-clean (option D, promoted 2026-07-22), muted-rust accent.
+     Name settled 2026-07-22 (islandmeasuring.com/.ca — register before launch).
+     Placeholder to fill before launch: EMAIL (hero-adjacent CTA + contact
+     section) → mail@islandmeasuring.ca once DNS/Workspace alias is live.
+     NO PHONE on the site — Brandon's call, 2026-07-22. Email-only contact.
+     Prose register (Brandon's call): contractor-plain, like a good quote
+     sheet — plain descriptive sentences, real specifics, honest hedges, no
+     selling. HEADINGS ARE FUNCTIONAL LABELS (Pricing, Scope, FAQ) — never
+     slogans or clipped aphorisms; that tone is explicitly rejected.
+     Positioning: MEASUREMENT ONLY. This page deliberately offers no design,
+     no code advice, no permit services — existing-conditions documentation
+     only. Keep it that way; it is the liability model. "Architect" is an
+     AIBC-protected title in BC — never used. NO biographical or credential
+     references anywhere (Brandon's calls, 2026-07-21/22): no degrees, no
+     schools, no names. The voice is an anonymous technician — the service
+     is described, never the person.
+     ═══════════════════════════════════════════════════════════════════════ -->
+<style>
+  :root{
+    --paper:#ffffff;      /* clean white */
+    --alt:#f4f4f2;        /* section alternation */
+    --ink:#171715;        /* near-black */
+    --line:#e2e2dd;       /* hairline */
+    --muted:#6b6b64;
+    --accent:#b5622f;     /* muted rust — toned down from safety orange, Brandon's call */
+    --accent-deep:#935026;
+    --card:#ffffff;
+    --dark:#1b1b19;
+    --dark-paper:#ffffff;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Helvetica Neue',Inter,Arial,sans-serif;
+    background:var(--paper); color:var(--ink);
+    font-size:16px;
+    line-height:1.55;
+  }
+  .sans{font-family:'Helvetica Neue',Inter,Arial,sans-serif}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+  /* ── header ─────────────────────────────────────────────── */
+  header{
+    position:sticky;top:0;z-index:10;
+    background:rgba(255,255,255,.96);backdrop-filter:blur(4px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:baseline;justify-content:space-between;padding:14px 24px;max-width:960px;margin:0 auto}
+  .wordmark{font-weight:800;font-size:1.25rem;letter-spacing:.1em;text-transform:uppercase}
+  .wordmark span{color:var(--accent)}
+  nav.links{display:flex;gap:20px;font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+  nav.links a{color:var(--ink);text-decoration:none;border-bottom:3px solid transparent;padding-bottom:2px}
+  nav.links a:hover{border-color:var(--accent)}
+  @media(max-width:640px){nav.links{display:none}}
+
+  /* ── hero ───────────────────────────────────────────────── */
+  .hero{padding:80px 0 64px;background:var(--paper)}
+  .kicker{font-size:.78rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);margin-bottom:18px}
+  h1{font-size:clamp(2.1rem,5.4vw,3.2rem);line-height:1.08;font-weight:800;letter-spacing:-.02em;max-width:21ch}
+  h1 em{font-style:normal;color:var(--accent)}
+  .hero p.lede{margin-top:22px;font-size:1.12rem;max-width:56ch;color:var(--muted)}
+  .hero .cred{margin-top:18px;font-size:.82rem;font-weight:700;letter-spacing:.04em;color:var(--ink);display:inline-block;border-left:4px solid var(--accent);padding:8px 14px;background:var(--alt)}
+  .cta-row{margin-top:32px;display:flex;gap:14px;flex-wrap:wrap}
+  .btn{font-size:.85rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;padding:16px 30px;border:2px solid var(--ink);display:inline-block}
+  .btn.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+  .btn.primary:hover{background:var(--accent-deep);border-color:var(--accent-deep)}
+  .btn.ghost{color:var(--ink);background:transparent}
+  .btn.ghost:hover{background:var(--ink);color:#fff;border-color:var(--ink)}
+
+  /* ── section scaffolding ───────────────────────────────── */
+  section{padding:72px 0;border-bottom:none}
+  section:nth-of-type(even){background:var(--alt)}
+  .sec-num{color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;margin-bottom:10px}
+  h2{font-size:clamp(1.6rem,3.4vw,2.2rem);font-weight:700;letter-spacing:-.01em;margin-bottom:14px;max-width:30ch}
+  .sub{color:var(--muted);max-width:62ch;margin-bottom:34px}
+
+  /* ── dark band ─────────────────────────────────────────── */
+  .band{background:var(--dark);color:#fff}
+  section.band{background:var(--dark)}
+  .band .sec-num{color:var(--accent)}
+  .band h2{color:#fff}
+  .band .sub{color:#b9b9b0}
+  .band-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .band-cell{background:#242421;padding:24px;border-left:4px solid var(--accent)}
+  .band-cell .big{font-weight:800;font-size:1.5rem;color:#fff;text-transform:uppercase;letter-spacing:.02em}
+  .band-cell p{font-size:.9rem;color:#b9b9b0;margin-top:8px}
+  @media(max-width:720px){.band-grid{grid-template-columns:1fr}}
+
+  /* ── pricing ladder ────────────────────────────────────── */
+  .tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  @media(max-width:820px){.tiers{grid-template-columns:1fr}}
+  .tier{background:#fff;border-left:4px solid var(--accent);padding:26px 22px;display:flex;flex-direction:column}
+  .tier.feature{border:2px solid var(--ink);border-top:6px solid var(--accent);padding-top:24px}
+  .tier .t-label{font-size:.72rem;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+  .tier h3{font-size:1.25rem;font-weight:700;margin:8px 0 2px}
+  .tier .price{font-weight:800;font-size:2.1rem;margin:10px 0 2px}
+  .tier .price small{font-size:.85rem;font-weight:400;color:var(--muted)}
+  .tier .for{font-size:.86rem;font-weight:700;color:var(--accent-deep);margin-bottom:14px}
+  .tier ul{list-style:none;font-size:.92rem;margin-top:2px}
+  .tier li{padding:7px 0 7px 22px;border-top:1px solid var(--line);position:relative}
+  .tier li::before{content:"—";position:absolute;left:0;color:var(--accent);font-weight:800}
+  .tier .note{margin-top:auto;padding-top:16px;font-size:.8rem;color:var(--muted)}
+  .basefile{margin-top:22px;background:#fff;border-left:4px solid var(--accent);padding:22px 24px;display:flex;gap:22px;align-items:baseline;flex-wrap:wrap}
+  .basefile .price{font-weight:800;font-size:1.5rem;white-space:nowrap}
+  .basefile p{font-size:.95rem;max-width:60ch}
+
+  /* ── add-ons table ─────────────────────────────────────── */
+  .addons{width:100%;border-collapse:collapse;background:#fff;font-size:.95rem}
+  .addons th{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;text-align:left;padding:14px 16px;background:var(--dark);color:#fff}
+  .addons td{padding:12px 16px;vertical-align:top}
+  .addons tr:nth-child(odd) td{background:var(--alt)}
+  .addons td:last-child{font-weight:800;white-space:nowrap;text-align:right;color:var(--ink)}
+  .table-scroll{overflow-x:auto}
+
+  /* ── scope ─────────────────────────────────────────────── */
+  .scope-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+  @media(max-width:720px){.scope-grid{grid-template-columns:1fr}}
+  .scope-col{background:#fff;padding:24px;border-left:4px solid var(--line)}
+  .scope-col h3{font-size:.8rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;margin-bottom:14px}
+  .scope-col.inc{border-left-color:#2e6b3f}
+  .scope-col.exc{border-left-color:var(--accent)}
+  .scope-col.inc h3{color:#2e6b3f}
+  .scope-col.exc h3{color:var(--accent-deep)}
+  .scope-col ul{list-style:none;font-size:.93rem}
+  .scope-col li{padding:6px 0 6px 22px;border-top:1px solid var(--line);position:relative}
+  .scope-col.inc li::before{content:"✓";position:absolute;left:0;color:#2e6b3f;font-weight:800}
+  .scope-col.exc li::before{content:"✕";position:absolute;left:0;color:var(--accent-deep);font-weight:800}
+  .rules{margin-top:22px;background:#fff;border-left:4px solid var(--accent);padding:18px 22px;font-size:.92rem}
+  .rules strong{font-size:.78rem;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-deep)}
+
+  /* ── credential ────────────────────────────────────────── */
+  .who{display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:start}
+  @media(max-width:640px){.who{grid-template-columns:1fr}}
+  .seal{width:180px;height:180px;border:3px solid var(--accent);display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#fff;text-transform:uppercase}
+  .seal .s1{font-size:.62rem;font-weight:700;letter-spacing:.22em;color:var(--muted)}
+  .seal .s2{font-weight:800;font-size:1.05rem;margin:6px 0;letter-spacing:.06em}
+  .seal .s3{font-size:.62rem;font-weight:800;letter-spacing:.18em;color:var(--accent)}
+  .who p{margin-bottom:14px;max-width:62ch}
+
+  /* ── process ───────────────────────────────────────────── */
+  .steps{counter-reset:step;display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+  @media(max-width:820px){.steps{grid-template-columns:1fr 1fr}}
+  @media(max-width:520px){.steps{grid-template-columns:1fr}}
+  .step{counter-increment:step;background:#fff;border-left:4px solid var(--accent);padding:20px}
+  .step::before{content:counter(step,decimal-leading-zero);font-weight:800;font-size:1.6rem;color:var(--accent);display:block;margin-bottom:8px}
+  .step h3{font-size:1rem;font-weight:700;margin-bottom:6px}
+  .step p{font-size:.87rem;color:var(--muted)}
+
+  /* ── faq ───────────────────────────────────────────────── */
+  .faq{background:var(--alt);border-left:4px solid var(--accent)}
+  .faq-item{padding:18px 22px;border-top:1px solid var(--line)}
+  .faq-item:first-child{border-top:0}
+  .faq-item h3{font-size:.8rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px;color:var(--accent-deep)}
+  .faq-item p{font-size:.95rem}
+
+  /* ── contact / footer ──────────────────────────────────── */
+  .contact{background:var(--dark);color:#fff;border-bottom:none;text-align:center;padding:80px 0}
+  section.contact{background:var(--dark)}
+  .contact h2{color:#fff;max-width:none}
+  .contact .sub{margin:0 auto 30px;color:#b9b9b0}
+  footer{background:var(--dark);color:#8f8f86;padding:28px 0 44px;font-size:.8rem;border-top:1px solid #33332f}
+  footer .wrap{display:flex;flex-direction:column;gap:8px}
+  footer a{color:#b9b9b0}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav">
+    <div class="wordmark">Island <span>Measuring</span></div>
+    <nav class="links">
+      <a href="#commercial">Commercial</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#scope">Scope</a>
+      <a href="#who">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Book</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ── HERO ──────────────────────────────────────────────── -->
+<div class="hero">
+  <div class="wrap">
+    <div class="kicker">Greater Victoria · Vancouver Island · Residential &amp; Commercial</div>
+    <h1>Measured floor plans &amp; as-built drawings</h1>
+    <p class="lede">Island Measuring is a building-measurement service for Greater Victoria and
+    Vancouver Island. Floor plans, as-built drawings, and area calculations of existing
+    buildings — homes, condos, suites, retail, office, and light industrial. Measured on
+    site, drawn in CAD, delivered on the schedule quoted.</p>
+    <div class="cred">Measured &amp; drafted by hand — to RMS / ANSI Z765 &amp; BOMA standards</div>
+    <div class="cta-row">
+      <a class="btn primary" href="#contact">Book a measure</a>
+      <a class="btn ghost" href="#pricing">See pricing</a>
+    </div>
+  </div>
+</div>
+
+<!-- ── COMMERCIAL BAND ───────────────────────────────────── -->
+<section class="band" id="commercial">
+  <div class="wrap">
+    <div class="sec-num">01</div>
+    <h2>Commercial area measurement</h2>
+    <p class="sub">Commercial rent is priced by area. We measure retail, office, and light-industrial
+    space to the BOMA measurement standards and provide drawings and area tables both sides of a
+    lease can rely on. Flat quote before we start.</p>
+    <div class="band-grid">
+      <div class="band-cell">
+        <div class="big">Lease areas</div>
+        <p>Rentable and usable area to the applicable BOMA standard, for signing, renewing, or verifying an existing lease.</p>
+      </div>
+      <div class="band-cell">
+        <div class="big">As-built plans</div>
+        <p>Existing-conditions drawings for tenant handovers, renovation quoting, insurance, and facility records — measured on site.</p>
+      </div>
+      <div class="band-cell">
+        <div class="big">Off-hours</div>
+        <p>Occupied space measured around tenants and business hours — evenings and early mornings available.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PRICING ───────────────────────────────────────────── -->
+<section id="pricing">
+  <div class="wrap">
+    <div class="sec-num">02</div>
+    <h2>Pricing</h2>
+    <p class="sub">Every job is one site visit, measured by hand. Residential square footage
+    is reported to the RMS / ANSI Z765 standard, commercial to BOMA. Accuracy depends on the
+    building, but plans hold within 2% — typically much better. Anything beyond the tier is a
+    priced add-on, never a change order.</p>
+
+    <div class="tiers">
+      <div class="tier">
+        <div class="t-label">Tier 1</div>
+        <h3>Listing Plan</h3>
+        <div class="price">$500 <small>up to 2,000 ft²</small></div>
+        <div class="for">Realtors &amp; sellers — MLS-ready</div>
+        <ul>
+          <li>Measured floor plan, all levels</li>
+          <li>Square footage by level (RMS)</li>
+          <li>PDF + editable CAD (DWG), 48-hr delivery</li>
+          <li>+$0.10/ft² over 2,000 ft²</li>
+        </ul>
+        <div class="note">Measured by hand, reported to the RMS standard.</div>
+      </div>
+
+      <div class="tier feature">
+        <div class="t-label">Tier 2</div>
+        <h3>As-Built Set</h3>
+        <div class="price">from $1,000</div>
+        <div class="for">Renovators, designers, cabinet &amp; flooring trades</div>
+        <ul>
+          <li>Dimensioned plans you can build from</li>
+          <li>Wall thicknesses; doors and windows located</li>
+          <li>Editable CAD (DWG) + PDF</li>
+        </ul>
+        <div class="note">Suitable for quoting, fabrication, and as the base file for design work.</div>
+      </div>
+
+      <div class="tier">
+        <div class="t-label">Tier 3</div>
+        <h3>Commercial Measure</h3>
+        <div class="price">from $2,000 <small>quoted per building</small></div>
+        <div class="for">Landlords, tenants, property managers</div>
+        <ul>
+          <li>BOMA rentable / usable area tables</li>
+          <li>As-built floor plans, CAD + PDF</li>
+          <li>Retail, office, light industrial</li>
+          <li>Off-hours measurement available</li>
+          <li>Flat quote before we start</li>
+        </ul>
+        <div class="note">Flat quote per building, agreed before work starts.</div>
+      </div>
+    </div>
+
+    <p style="margin-top:14px;font-size:.85rem;color:var(--muted)">*Minimum booking $500.
+    Buildings over 10,000 ft² are quoted individually — email for pricing.</p>
+
+    <div class="basefile">
+      <div class="price">Secondary &amp; garden suites</div>
+      <p>BC's small-scale housing rules (Bill 44) let most single-family lots add a secondary or
+      garden suite. Every suite project starts with an accurate drawing of what exists — a Tier-2
+      as-built. We produce the measured base file; your designer, builder, or engineer takes it
+      from there.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── ADD-ONS ───────────────────────────────────────────── -->
+<section>
+  <div class="wrap">
+    <div class="sec-num">03</div>
+    <h2>Add-ons</h2>
+    <p class="sub">All add-ons document what exists; none are design. Add any of these to any tier.</p>
+    <div class="table-scroll">
+    <table class="addons">
+      <tr><th>Add-on</th><th>Good for</th><th>Price</th></tr>
+      <tr><td>Rush — measured &amp; delivered in 24 hrs</td><td>Listings &amp; deals on a deadline</td><td>+$150</td></tr>
+      <tr><td>Interior elevations of existing walls</td><td>Kitchens, baths, built-ins, tenant handovers</td><td>$300–$600</td></tr>
+      <tr><td>Reflected ceiling plan — heights, bulkheads, fixtures located</td><td>Commercial interiors, reno planning</td><td>$250–$500</td></tr>
+      <tr><td>3D model of existing conditions</td><td>Designers &amp; owners who want the full 3D picture</td><td>$500–$1,200</td></tr>
+      <tr><td>Field measure &amp; templating for trades</td><td>Countertop, cabinet, closet &amp; flooring installers</td><td>$150–$300</td></tr>
+      <tr><td>Site measure — lot, structures &amp; distances between them</td><td>Planning a suite; property records</td><td>+$150</td></tr>
+      <tr><td>Each additional floor level</td><td>—</td><td>+$100</td></tr>
+      <tr><td>Detached garage / outbuilding</td><td>—</td><td>+$125</td></tr>
+      <tr><td>Travel beyond 30 km of Victoria</td><td>Up-island &amp; Gulf Islands</td><td>$0.75/km</td></tr>
+    </table>
+    </div>
+  </div>
+</section>
+
+<!-- ── SCOPE ─────────────────────────────────────────────── -->
+<section id="scope">
+  <div class="wrap">
+    <div class="sec-num">04</div>
+    <h2>Scope</h2>
+    <p class="sub">The scope is written down so there are no surprises. You get facts on paper;
+    the professionals you hire next get a base file they can trust.</p>
+    <div class="scope-grid">
+      <div class="scope-col inc">
+        <h3>Included in every measure</h3>
+        <ul>
+          <li>Interior &amp; partition walls, room dimensions</li>
+          <li>Closets, stairs, built-in footprints</li>
+          <li>Door &amp; window openings, located</li>
+          <li>Garage footprint</li>
+          <li>Residential area to RMS / ANSI Z765, within 2%</li>
+          <li>Commercial area to the applicable BOMA standard</li>
+          <li>Detached homes measured at exterior foundation; condos paint-to-paint</li>
+          <li>Basements measured, reported separately from above-grade area</li>
+        </ul>
+      </div>
+      <div class="scope-col exc">
+        <h3>What we don't do</h3>
+        <ul>
+          <li>Design services of any kind — no proposed plans, no layouts</li>
+          <li>Building-code or zoning advice</li>
+          <li>Permit applications or approvals</li>
+          <li>Electrical, plumbing, HVAC or structural assessment</li>
+          <li>Legal surveys — that's a BC Land Surveyor</li>
+          <li>Furniture &amp; movable fixtures in drawings</li>
+          <li>Areas with under 5 ft of ceiling height in the reported square footage</li>
+        </ul>
+      </div>
+    </div>
+    <div class="rules">
+      <strong>Operating rules</strong> — Minimum booking $500. One site visit per job. One revision round included; further
+      revisions billed hourly. Re-measures (the space changed) are a new job. Every drawing carries
+      the note: <em>"Existing-conditions documentation prepared for the purpose stated; not a legal
+      survey; not design; dimensions to be verified independently before construction or purchase
+      decisions."</em> When your project needs a designer, engineer, registered architect, or land
+      surveyor, we'll say so and hand over a clean file.
+    </div>
+  </div>
+</section>
+
+<!-- ── WHO ───────────────────────────────────────────────── -->
+<section id="who">
+  <div class="wrap">
+    <div class="sec-num">05</div>
+    <h2>About the service</h2>
+    <div class="who">
+      <div class="seal">
+        <div class="s1">Hand-measured</div>
+        <div class="s2">RMS · BOMA<br>STANDARDS</div>
+        <div class="s3">Victoria BC</div>
+      </div>
+      <div>
+        <p>Every job is measured and drawn by the same technician — no handoffs, no
+        subcontracted drafting. Plans are measured by hand on site, drafted in real CAD,
+        and dimensioned the way the designers, estimators, and plans examiners who use
+        them next expect to read them.</p>
+        <p>Homes, condos, suites, retail, office, and light industrial.
+        Measured this week, delivered in days.</p>
+        <p style="font-size:.85rem;color:var(--muted)">Island Measuring is a measurement and
+        documentation service. It does not provide design, engineering, code, or survey services,
+        and is not an architectural firm — where your project needs an AIBC-registered architect,
+        an engineer, or a BC Land Surveyor, we'll say so and refer you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROCESS ───────────────────────────────────────────── -->
+<section>
+  <div class="wrap">
+    <div class="sec-num">06</div>
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><h3>Book</h3><p>Email the address and what the drawing is for. Fixed quote back same day.</p></div>
+      <div class="step"><h3>Measure</h3><p>One visit, usually under two hours for a typical home. We work around tenants, business hours, and open houses.</p></div>
+      <div class="step"><h3>Draw</h3><p>Drafted in CAD to the RMS or BOMA standard. Tier 1 in 48 hrs; as-builts and commercial on the schedule in your quote.</p></div>
+      <div class="step"><h3>Deliver</h3><p>PDF + CAD where included. One revision round, then the files are yours — no subscriptions, no portal.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ───────────────────────────────────────────────── -->
+<section id="faq">
+  <div class="wrap">
+    <div class="sec-num">07</div>
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <div class="faq-item">
+        <h3>How long does the measure take?</h3>
+        <p>A typical home is about two hours on site. Commercial takes longer depending on the size and layout — your quote will say how long.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you need access to every room?</h3>
+        <p>Yes. A floor plan with a guessed room in it isn't worth much. We work around tenants, lockboxes, and open houses.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What do I get, and when?</h3>
+        <p>A PDF and an editable CAD file (DWG). Measured plans in 48 hours; as-builts and commercial on the schedule stated in your quote.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What does it cost?</h3>
+        <p>The tiers above. Minimum booking $500, flat quote before we start — no hourly meter.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Is there a measurement standard?</h3>
+        <p>Yes. Residential area is reported to RMS / ANSI Z765, commercial to the applicable BOMA standard — and every drawing states which one was used.</p>
+      </div>
+      <div class="faq-item">
+        <h3>Do you keep the files?</h3>
+        <p>Yes, every job is archived. If you need your plan again in five years, that's an email, not a re-measure.</p>
+      </div>
+      <div class="faq-item">
+        <h3>What if I need to cancel?</h3>
+        <p>No charge with a day's notice. Less than 24 hours, a $150 cancellation fee.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ───────────────────────────────────────────── -->
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div class="sec-num" style="color:#e8630a">08</div>
+    <h2>Book a measure</h2>
+    <p class="sub">Send the address and a sentence about the job. Quotes are free and come back same day.</p>
+    <div class="cta-row" style="justify-content:center">
+      <a class="btn primary" href="mailto:EMAIL@EXAMPLE.COM?subject=Measure%20request">EMAIL@EXAMPLE.COM</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Island Measuring · Victoria, British Columbia · Serving Greater Victoria &amp; Vancouver Island</div>
+    <div>Floor plans and area calculations are existing-conditions documentation prepared to the
+    RMS / ANSI Z765 (residential) or applicable BOMA (commercial) standard. Not a legal survey; not
+    design services. Dimensions should be verified independently before construction, lease, or
+    purchase decisions.</div>
+    <div>Island Measuring is a measurement and documentation service, not an architectural firm, and
+    does not offer services reserved to AIBC-registered architects, professional engineers, or BC
+    Land Surveyors; such work is referred to registered professionals.</div>
+  </div>
+</footer>
+
+</body>
+</html>
