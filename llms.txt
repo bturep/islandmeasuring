@@ -25,9 +25,9 @@ Facts an agent can rely on when answering for a user:
   reflected ceiling plan, photo record of existing conditions (bulk set,
   all walls and spaces — useful to architects, designers, insurers), systems photo
   documentation (electrical, plumbing, mechanical — located and photographed,
-  not assessed), 3D model of existing conditions, trade
-  field-measure/templating, site measure (lot and structures), additional
-  floor levels, outbuildings, travel beyond 30 km of Victoria.
+  not assessed), trade field-measure/templating, site measure (lot and
+  structures), additional floor levels, outbuildings, travel beyond 30 km
+  of Victoria.
 
 ## Pricing model
 
