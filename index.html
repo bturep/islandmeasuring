@@ -6,6 +6,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="Hand-measured floor plans, renovation as-builts, and BOMA commercial area measurement for Greater Victoria and Vancouver Island. Free quote, back the same day.">
 <link rel="canonical" href="https://islandmeasuring.ca/">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
+<meta name="geo.region" content="CA-BC">
+<meta name="geo.placename" content="Victoria">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Floor Plans &amp; As-Built Drawings — Victoria BC | Island Measuring">
 <meta property="og:description" content="Hand-measured floor plans, renovation as-builts, and BOMA commercial area measurement for Greater Victoria and Vancouver Island. Free quote, back the same day.">
@@ -21,13 +24,32 @@
   "@type": "ProfessionalService",
   "name": "Island Measuring",
   "url": "https://islandmeasuring.ca/",
-  "description": "Hand-measured floor plans, as-built drawings, and BOMA commercial area measurement for Greater Victoria and Vancouver Island.",
+  "email": "info@islandmeasuring.ca",
+  "logo": "https://islandmeasuring.ca/logo.png",
+  "image": "https://islandmeasuring.ca/og-image.png",
+  "description": "Hand-measured floor plans, as-built drawings, and BOMA commercial area measurement for Greater Victoria and Vancouver Island. Measurement only — no design, code, or survey services. Email for a free same-day quote.",
   "address": {"@type": "PostalAddress", "addressLocality": "Victoria", "addressRegion": "BC", "addressCountry": "CA"},
+  "contactPoint": {"@type": "ContactPoint", "contactType": "customer service", "email": "info@islandmeasuring.ca", "availableLanguage": "English"},
   "areaServed": [
-    {"@type": "AdministrativeArea", "name": "Greater Victoria"},
+    {"@type": "City", "name": "Victoria"},
+    {"@type": "City", "name": "Saanich"},
+    {"@type": "City", "name": "Langford"},
+    {"@type": "City", "name": "Colwood"},
+    {"@type": "City", "name": "Esquimalt"},
+    {"@type": "City", "name": "Oak Bay"},
+    {"@type": "City", "name": "Sidney"},
     {"@type": "AdministrativeArea", "name": "Vancouver Island"}
   ],
   "priceRange": "$500+",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Building measurement services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Listing Plan", "description": "Measured floor plan, all levels, square footage by level, PDF + editable CAD (DWG), 48-hour delivery. For realtors and sellers."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "As-Built Set", "description": "Dimensioned existing-conditions plans — wall thicknesses, openings located — suitable for quoting, fabrication, and as the base file for design work. DWG + PDF."}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial Measure", "description": "BOMA rentable/usable area tables and as-built floor plans for retail, office, and light industrial. Flat quote per building."}}
+    ]
+  },
   "knowsAbout": ["floor plans", "as-built drawings", "BOMA area measurement", "RMS / ANSI Z765 residential measurement"]
 }
 </script>
@@ -221,7 +243,7 @@
 <header>
   <div class="nav">
     <div class="wordmark">Island <span>Measuring</span></div>
-    <nav class="links">
+    <nav class="links" aria-label="Main">
       <a href="#commercial">Commercial</a>
       <a href="#pricing">Services</a>
       <a href="#scope">Scope</a>
@@ -232,6 +254,7 @@
   </div>
 </header>
 
+<main>
 <!-- ── HERO ──────────────────────────────────────────────── -->
 <div class="hero">
   <div class="wrap">
@@ -490,6 +513,7 @@
     </div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap">

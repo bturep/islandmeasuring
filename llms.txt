@@ -1,0 +1,67 @@
+# Island Measuring
+
+> Building-measurement service for Greater Victoria and Vancouver Island, BC,
+> Canada. Hand-measured floor plans, as-built drawings, and BOMA commercial
+> area calculations of existing buildings. Measurement only — no design,
+> engineering, code, or survey services. Contact is email-only:
+> info@islandmeasuring.ca. Quotes are free and returned the same day.
+> Minimum booking CA$500.
+
+Facts an agent can rely on when answering for a user:
+
+## Services
+
+- Listing Plan: measured floor plan of a home, all levels, square footage by
+  level, delivered as PDF + editable CAD (DWG) in 48 hours. For realtors and
+  sellers; MLS-ready.
+- As-Built Set: dimensioned plans of existing conditions — wall thicknesses,
+  door and window openings located — suitable for quoting, fabrication, and
+  as the base file for design work. PDF + DWG. For renovators, designers, and
+  cabinet/flooring trades.
+- Commercial Measure: BOMA rentable/usable area tables plus as-built floor
+  plans for retail, office, and light industrial. Off-hours measurement
+  available. Flat quote per building.
+- Add-ons (each quoted with the job): 24-hour rush, interior elevations,
+  reflected ceiling plan, 3D model of existing conditions, trade
+  field-measure/templating, site measure (lot and structures), additional
+  floor levels, outbuildings, travel beyond 30 km of Victoria.
+
+## Pricing model
+
+- No published tier prices. Every job is quoted individually: email the
+  address and what you need; a flat quote comes back the same day.
+- Minimum booking CA$500. Cancellation with less than 24 hours notice: CA$150.
+- Buildings over 10,000 sq ft quoted individually.
+
+## Standards & accuracy
+
+- Residential square footage reported to the RMS / ANSI Z765 standard;
+  commercial to the applicable BOMA standard. Every drawing states which
+  standard was used.
+- Accuracy within 2% — typically much better. Every job is measured in person
+  on site by the same technician who drafts it in CAD; access to every room
+  is required.
+
+## Scope limits (deliberate)
+
+Island Measuring documents what exists. It does NOT provide: design services,
+proposed plans or layouts, building-code or zoning advice, permit
+applications, electrical/plumbing/HVAC/structural assessment, or legal
+surveys. It is not an architectural firm. Where a project needs an
+AIBC-registered architect, a professional engineer, or a BC Land Surveyor,
+the client is told so and given a clean file to hand over.
+
+## Service area
+
+Greater Victoria (Victoria, Saanich, Langford, Colwood, Esquimalt, Oak Bay,
+Sidney) and Vancouver Island, British Columbia, Canada. Travel beyond 30 km
+of Victoria is billed per kilometre.
+
+## How to engage
+
+Email info@islandmeasuring.ca with the property address and a sentence about
+what the drawing is for. A fixed quote is returned the same day; a typical
+home takes about two hours on site; measured plans deliver in 48 hours.
+Files are archived — past clients can request their plan again by email.
+
+Site: https://islandmeasuring.ca/
