@@ -14,8 +14,12 @@
      NO PHONE on the site — Brandon's call, 2026-07-22. Email-only contact.
      Prose register (Brandon's call): contractor-plain, like a good quote
      sheet — plain descriptive sentences, real specifics, honest hedges, no
-     selling. HEADINGS ARE FUNCTIONAL LABELS (Pricing, Scope, FAQ) — never
+     selling. HEADINGS ARE FUNCTIONAL LABELS (Services, Scope, FAQ) — never
      slogans or clipped aphorisms; that tone is explicitly rejected.
+     NO PRICES on the site (Brandon's call, 2026-07-25, on outside advice +
+     comparables Tafe Measure / MeasureBuilt): every job quoted individually;
+     only "Minimum booking $500" and the cancellation fee appear. The internal
+     rate card lives in the Business repo (archmeasure/STRATEGY.md).
      Positioning: MEASUREMENT ONLY. This page deliberately offers no design,
      no code advice, no permit services — existing-conditions documentation
      only. Keep it that way; it is the liability model. "Architect" is an
@@ -118,7 +122,6 @@
   .addons th{font-size:.72rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase;text-align:left;padding:14px 16px;background:var(--dark);color:#fff}
   .addons td{padding:12px 16px;vertical-align:top}
   .addons tr:nth-child(odd) td{background:var(--alt)}
-  .addons td:last-child{font-weight:800;white-space:nowrap;text-align:right;color:var(--ink)}
   .table-scroll{overflow-x:auto}
 
   /* ── scope ─────────────────────────────────────────────── */
@@ -179,7 +182,7 @@
     <div class="wordmark">Island <span>Measuring</span></div>
     <nav class="links">
       <a href="#commercial">Commercial</a>
-      <a href="#pricing">Pricing</a>
+      <a href="#pricing">Services</a>
       <a href="#scope">Scope</a>
       <a href="#who">About</a>
       <a href="#faq">FAQ</a>
@@ -200,7 +203,7 @@
     <div class="cred">Measured &amp; drafted by hand</div>
     <div class="cta-row">
       <a class="btn primary" href="#contact">Book a measure</a>
-      <a class="btn ghost" href="#pricing">See pricing</a>
+      <a class="btn ghost" href="#pricing">See services</a>
     </div>
   </div>
 </div>
@@ -234,7 +237,7 @@
 <section id="pricing">
   <div class="wrap">
     <div class="sec-num">02</div>
-    <h2>Pricing</h2>
+    <h2>Services</h2>
     <p class="sub">Every job is one site visit, measured by hand. Accuracy depends on the
     building, but plans hold within 2% — typically much better. Anything beyond the tier is a
     priced add-on, never a change order.</p>
@@ -243,20 +246,17 @@
       <div class="tier">
         <div class="t-label">Tier 1</div>
         <h3>Listing Plan</h3>
-        <div class="price">$500 <small>up to 2,000 ft²</small></div>
         <div class="for">Realtors &amp; sellers — MLS-ready</div>
         <ul>
           <li>Measured floor plan, all levels</li>
           <li>Square footage by level</li>
           <li>PDF + editable CAD (DWG), 48-hr delivery</li>
-          <li>+$0.10/ft² over 2,000 ft²</li>
         </ul>
       </div>
 
       <div class="tier feature">
         <div class="t-label">Tier 2</div>
         <h3>As-Built Set</h3>
-        <div class="price">from $1,000</div>
         <div class="for">Renovators, designers, cabinet &amp; flooring trades</div>
         <ul>
           <li>Dimensioned plans you can build from</li>
@@ -269,7 +269,6 @@
       <div class="tier">
         <div class="t-label">Tier 3</div>
         <h3>Commercial Measure</h3>
-        <div class="price">from $2,000 <small>quoted per building</small></div>
         <div class="for">Landlords, tenants, property managers</div>
         <ul>
           <li>BOMA rentable / usable area tables</li>
@@ -280,8 +279,8 @@
       </div>
     </div>
 
-    <p style="margin-top:14px;font-size:.85rem;color:var(--muted)">*Minimum booking $500.
-    Buildings over 10,000 ft² are quoted individually — email for pricing.</p>
+    <p style="margin-top:14px;font-size:.95rem;font-weight:700">Every job is quoted
+    individually — free quote, back the same day. <span style="font-weight:400;color:var(--muted)">Minimum booking $500.</span></p>
 
     <div class="basefile">
       <div class="price">Secondary &amp; garden suites</div>
@@ -298,19 +297,19 @@
   <div class="wrap">
     <div class="sec-num">03</div>
     <h2>Add-ons</h2>
-    <p class="sub">All add-ons document what exists; none are design. Add any of these to any tier.</p>
+    <p class="sub">All add-ons document what exists; none are design. Add any to any tier — each is quoted with the job.</p>
     <div class="table-scroll">
     <table class="addons">
-      <tr><th>Add-on</th><th>Good for</th><th>Price</th></tr>
-      <tr><td>Rush — measured &amp; delivered in 24 hrs</td><td>Listings &amp; deals on a deadline</td><td>+$150</td></tr>
-      <tr><td>Interior elevations of existing walls</td><td>Kitchens, baths, built-ins, tenant handovers</td><td>$300–$600</td></tr>
-      <tr><td>Reflected ceiling plan — heights, bulkheads, fixtures located</td><td>Commercial interiors, reno planning</td><td>$250–$500</td></tr>
-      <tr><td>3D model of existing conditions</td><td>Designers &amp; owners who want the full 3D picture</td><td>$500–$1,200</td></tr>
-      <tr><td>Field measure &amp; templating for trades</td><td>Countertop, cabinet, closet &amp; flooring installers</td><td>$150–$300</td></tr>
-      <tr><td>Site measure — lot, structures &amp; distances between them</td><td>Planning a suite; property records</td><td>+$150</td></tr>
-      <tr><td>Each additional floor level</td><td>—</td><td>+$100</td></tr>
-      <tr><td>Detached garage / outbuilding</td><td>—</td><td>+$125</td></tr>
-      <tr><td>Travel beyond 30 km of Victoria</td><td>Up-island &amp; Gulf Islands</td><td>$0.75/km</td></tr>
+      <tr><th>Add-on</th><th>Good for</th></tr>
+      <tr><td>Rush — measured &amp; delivered in 24 hrs</td><td>Listings &amp; deals on a deadline</td></tr>
+      <tr><td>Interior elevations of existing walls</td><td>Kitchens, baths, built-ins, tenant handovers</td></tr>
+      <tr><td>Reflected ceiling plan — heights, bulkheads, fixtures located</td><td>Commercial interiors, reno planning</td></tr>
+      <tr><td>3D model of existing conditions</td><td>Designers &amp; owners who want the full 3D picture</td></tr>
+      <tr><td>Field measure &amp; templating for trades</td><td>Countertop, cabinet, closet &amp; flooring installers</td></tr>
+      <tr><td>Site measure — lot, structures &amp; distances between them</td><td>Planning a suite; property records</td></tr>
+      <tr><td>Each additional floor level</td><td>—</td></tr>
+      <tr><td>Detached garage / outbuilding</td><td>—</td></tr>
+      <tr><td>Travel beyond 30 km of Victoria</td><td>Up-island &amp; Gulf Islands</td></tr>
     </table>
     </div>
   </div>
@@ -421,7 +420,7 @@
       </div>
       <div class="faq-item">
         <h3>What does it cost?</h3>
-        <p>The tiers above. Flat quote before we start — no hourly meter.</p>
+        <p>Every job is quoted individually — send the address and what you need, and a flat quote comes back the same day. No hourly meter.</p>
       </div>
       <div class="faq-item">
         <h3>Is there a measurement standard?</h3>
