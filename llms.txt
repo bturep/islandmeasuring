@@ -22,8 +22,8 @@ Facts an agent can rely on when answering for a user:
   plans for retail, office, and light industrial. Off-hours measurement
   available. Flat quote per building.
 - Add-ons (each quoted with the job): 24-hour rush, interior elevations,
-  reflected ceiling plan, photo record of existing conditions keyed to the
-  plan (useful to architects, designers, insurers), systems photo
+  reflected ceiling plan, photo record of existing conditions (bulk set,
+  all walls and spaces — useful to architects, designers, insurers), systems photo
   documentation (electrical, plumbing, mechanical — located and photographed,
   not assessed), 3D model of existing conditions, trade
   field-measure/templating, site measure (lot and structures), additional
