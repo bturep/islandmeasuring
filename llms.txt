@@ -2,8 +2,10 @@
 
 > Building-measurement service for Greater Victoria and Vancouver Island, BC,
 > Canada. Hand-measured floor plans, as-built drawings, and BOMA commercial
-> area calculations of existing buildings. Measurement only — no design,
-> engineering, code, or survey services. Contact is email-only:
+> area calculations of existing buildings, including homes, condos, suites,
+> retail, office, light industrial, and larger care homes, seniors residences,
+> institutional, and multi-unit residential buildings. Measurement only — no
+> design, engineering, code, or survey services. Contact is email-only:
 > info@islandmeasuring.ca. Quotes are free and returned the same day.
 > Minimum booking CA$500.
 
@@ -21,6 +23,15 @@ Facts an agent can rely on when answering for a user:
 - Commercial Measure: BOMA rentable/usable area tables plus as-built floor
   plans for retail, office, and light industrial. Off-hours measurement
   available. Flat quote per building.
+- Large / institutional buildings: care homes, seniors residences, and other
+  large or multi-unit residential buildings, measured and drawn as a full
+  as-built set (every room's use and dimensions, fixtures, openings, exits).
+  Quoted per building.
+- Working from existing drawings: where usable building plans already exist
+  (for example on file with the municipality), the plans can be digitized and
+  the dimensions verified on site instead of measuring a large building from
+  scratch. Often faster and lower-cost on big buildings; the drawing is
+  site-verified before delivery. Quoted per job.
 - Add-ons (each quoted with the job): 24-hour rush, interior elevations,
   reflected ceiling plan, photo record of existing conditions (bulk set,
   all walls and spaces — useful to architects, designers, insurers), systems photo
@@ -41,9 +52,9 @@ Facts an agent can rely on when answering for a user:
 - Residential square footage reported to the RMS / ANSI Z765 standard;
   commercial to the applicable BOMA standard. Every drawing states which
   standard was used.
-- Accuracy within 2% — typically much better. Every job is measured in person
-  on site by the same technician who drafts it in CAD; access to every room
-  is required.
+- Accuracy within 2% — typically much better on a fresh hand measure. Every
+  job is verified in person on site by the same technician who drafts it in
+  CAD; access to the building is required.
 
 ## Scope limits (deliberate)
 
