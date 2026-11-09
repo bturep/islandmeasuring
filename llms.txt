@@ -21,8 +21,8 @@ Facts an agent can rely on when answering for a user:
   as the base file for design work. PDF + DWG. For renovators, designers, and
   cabinet/flooring trades.
 - Commercial Measure: as-built floor plans and area calculations for retail,
-  office, and light industrial. BOMA rentable/usable area tables are available
-  as an added service. Off-hours measurement available. Flat quote per
+  office, and light industrial, with the floor area of each unit calculated
+  from the measured plan. Off-hours measurement available. Flat quote per
   building.
 - Large / institutional buildings: care homes, seniors residences, and other
   large or multi-unit residential buildings, measured and drawn as a full
@@ -51,8 +51,8 @@ Facts an agent can rely on when answering for a user:
 ## Standards & accuracy
 
 - Residential square footage reported to the RMS / ANSI Z765 standard.
-  Commercial area calculations, including BOMA rentable/usable tables, are
-  quoted as an added service. Every drawing states which standard was used.
+  Commercial floor areas are calculated from the measured plan, unit by unit.
+  Every drawing states the standard or method used.
 - Accuracy within 2% — typically much better on a fresh hand measure. Every
   job is verified in person on site by the same technician who drafts it in
   CAD; access to the building is required.
